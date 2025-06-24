@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.tela-inicio{
+    /* background-image: url(imgs/background.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img{
+    width: 500px;
+}
+
+.botao{
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+}
+.title button{
+
+}
+/*Redes sociais*/
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes a{
+    text-decoration: none;
+    color: white;}
+
+.redes ul{
+    list-style: none;
+}
+
+.redes ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    height: 45px;
+    width: 45px;
+    border-radius: 60px;
+    position: relative;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #1f1d1d;
+}
+
+.redes ul li:hover{width: 90px;}
+.redes ul li:hover::before{opacity: 1;}
+.redes ul li span{position: absolute;}
+
+.redes .icon{
+    font-size: 25px;
+    transition: .2s;
+}
+.icon .bi-instagram{color: rgb(221, 55, 138);}
+.icon .bi-github{color: purple;}
+.icon .bi-linkedin{color: rgb(19, 19, 173);}
+
+.redes ul li:hover .icon{transform: scale(0);}
+
+.redes ul li .text{
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .2s;
+    font-size: 15px;
+}
+
+.redes ul li:hover .text{transform: scale(1);}
+
+.redes ul li::before{
+    position: absolute;
+    content: " ";
+    border-radius: 60px;
+    inset: 0;
+    opacity: 0;
+}
+
+.redes ul li.instagram::before { background-image: linear-gradient(45deg,#fb3997, #fecf12 );}
+.redes ul li.github::before{background-image: linear-gradient(45deg,#333333, #6e5494);}
+.redes ul li.linkedin::before{background-image: linear-gradient(45deg,#09c5ff, #0986ff);}
