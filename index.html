@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-   <div class="tela-inicio" id="inicio">
+   <!-- <div class="tela-inicio" id="inicio">
         <div class="botao"><button onclick="bemVindo()"></button></div>
         <audio src="audios/welcome.mp3" id="audio"></audio>
-    </div>
+    </div> -->
     
     <nav>
         <ul>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="historia">
-            <h2>Historia</h2>
+            <h2 class="titleh2">Historia</h2>
 
             <div class="tower">
                 <h3>Dungeons and Dragons: Tower of Doom</h3>
@@ -49,23 +49,23 @@
         </div>
 
 
-        <div class="personagens">
+        <div class="personagens" id="Personagens">
             <div class="nomes">
-                <h2>Personagens</h2>
+                <h2 class="titleh2">Personagens</h2>
             </div>
             
             <div class="galeria1">
                 <div class="Cleric">
                     <img src="imgs/barbaro.png" alt="" class="clerico">
                     <div class="sinopse-cleric">
-                        <h4>Cleric(Clerico)</h4>
+                        <h4>Cleric (Clerico)</h4>
                         <p> Canaliza o poder divino para curar ou punir.</p>
                     </div>
                 </div>
                 <div class="elf">
                     <img src="imgs/elfa.png" alt="" class="elfa">
                     <div class="sinopse-elf">
-                        <h4>Elfa(Elf)</h4>
+                        <h4>Elfa (Elf)</h4>
                         <p>Ágil, mágico e ligado à natureza.</p>
                     </div>
                 </div>
@@ -75,20 +75,30 @@
                 <div class="dwarf">
                     <img src="imgs/anao.png" alt="" class="anao">
                     <div class="sinopse-anao">
-                        <h4>Anao</h4>
+                        <h4>Anão (Dwarf)</h4>
                         <p>Pequeno, duro como pedra e cheio de honra.</p>
                     </div>
                 </div>
                 <div class="fight">
                     <img src="imgs/cavaleiro.png" alt="" class="cavaleiro">
                     <div class="sinopse-cavaleiro">
-                        <h4>Cavaleiro</h4>
+                        <h4>Lutador (Fighter)</h4>
                         <p>Guerreiro versátil, mestre em armas e combate direto.</p>
                     </div>
                 </div>
             </div>
         </div><!--Fim da div personagem 1-->
 
+        <div class="bosses">
+            <h2 class="titleh2">Bosses</h2>
+
+            <a onclick="mostrarImagem('bosses/boss_ogre1.png')" class="listboss">boss1</a>
+            <a onclick="mostrarImagem('bosses/boss_manticore.png')" class="listboss">boss2</a>
+            <a onclick="mostrarImagem('bosses/boss_beast.png')">boss3</a>
+
+
+            <img id="imagem" src="" style="display: none">
+        </div>
 
     </main>
 
